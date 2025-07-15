@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production' || process.env.CI === 'true';
+
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  // Use basePath only for GitHub Pages (production), not local dev
-  basePath: process.env.NODE_ENV === 'production' ? '/GQO.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/GQO.github.io' : '',
+  basePath: isProd ? '/GQO.github.io' : '',
+  assetPrefix: isProd ? '/GQO.github.io/' : '', // Note: trailing slash for assetPrefix
   images: {
     unoptimized: true
   }
