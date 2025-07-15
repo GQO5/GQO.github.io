@@ -126,7 +126,7 @@ export const projects = [
     title: "Industrial Orange Sorting System",
     description: "Automated orange sorting and packaging workstation using RobotStudio for the agro-industrial sector",
     images: [
-      `${basePath}/images/projects/IndustrialRobotics/imagen1.png`,
+      `${basePath}/images/projects/IndustrialRobotics/Imagen1.png`,
     ],
     category: "robotics",
     technologies: ["RobotStudio", "Industrial Robots", "Conveyor Systems", "Computer Vision", "Automation"],
