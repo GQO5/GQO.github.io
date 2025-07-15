@@ -12,7 +12,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import {
-  Award,
   BookOpen,
   Code2,
   Cpu,
@@ -20,7 +19,6 @@ import {
   FileText,
   Github,
   Linkedin,
-  Mail,
   MapPin,
   Play,
   Calendar,
@@ -31,7 +29,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { projects, papers } from '@/data'
+import { projects, papers } from "@/data"
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all")
@@ -531,9 +529,9 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4">
         <div className="container max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
+          <h2 className="text-3xl font-bold mb-4">Let&apos;s Work Together</h2>
           <p className="text-muted-foreground mb-8">
-            I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
+            I&apos;m interested in new opportunities and collaborations. Feel free to reach out if you&apos;d like to
             discuss a project or just say hello.
           </p>
           <div className="flex justify-center gap-4 mb-8">
