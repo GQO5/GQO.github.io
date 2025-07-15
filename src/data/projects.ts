@@ -271,8 +271,8 @@ export const projects = [
       description: "Creative 3D mathematical modeling project featuring geometric shapes and double integral applications",
       images: [
         "/images/projects/Mate3/Imagen1.jpg",
-        "/images/projects/Mate3/Imagen2.jpg",
-        "/images/projects/Mate3/Imagen3.jpg"
+        "/images/projects/Mate3/Imagen2.png",
+        "/images/projects/Mate3/Imagen3.png"
       ],
       category: "engineering",
       technologies: ["3D Modeling", "Mathematical Modeling", "3D Printing", "Double Integrals"],
