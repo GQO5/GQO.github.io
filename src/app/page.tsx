@@ -80,7 +80,7 @@ export default function Portfolio() {
         <div className="container max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
-              src="/images/me.png"
+              src="{`${process.env.NODE_ENV === 'production' ? '/GQO.github.io' : ''}/images/me.png"
               alt="Profile"
               width={150}
               height={150}
