@@ -30,6 +30,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { projects, papers } from "@/data"
+ const basePath = process.env.NODE_ENV === 'production' ? '/GQO.github.io' : '';
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all")
@@ -80,7 +81,7 @@ export default function Portfolio() {
         <div className="container max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
-              src="{`${process.env.NODE_ENV === 'production' ? '/GQO.github.io' : ''}/images/me.png"
+              src={`${basePath}/images/me.png`}
               alt="Profile"
               width={150}
               height={150}
